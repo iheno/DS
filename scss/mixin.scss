@@ -27,6 +27,7 @@
 
 
 
+
 /* ==================== bakcground-size: cover ====================  */
 $imgUrl: "../img/" !default;
 $myimg: "" !default;
@@ -48,4 +49,24 @@ $myimg: "" !default;
 // export test ------------------------
 .sample-background-cover {
   @include bgSizeCover(300, 1000, 'sample.png') //（image height , image weight , 'image type'） */
+}
+
+
+
+
+
+/* ==================== When using ::before and ::after ====================  */
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+// export test ------------------------
+.sample-pseudo::after {
+  @include pseudo;
+  top: -1rem;
+  left: -1rem;
+  width: 1rem;
+  height: 1rem;
 }

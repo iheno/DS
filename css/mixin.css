@@ -38,3 +38,14 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+/* ==================== When using ::before and ::after ====================  */
+.sample-pseudo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  width: 1rem;
+  height: 1rem;
+}
