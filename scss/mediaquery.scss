@@ -94,7 +94,7 @@ $breakpoint-up-down: ('m--device': 'screen and (min-width: 320px) and (max-width
   }
 }
 
-// export test ------------------------
+// export test
 /* use ipad 640px : ipad */
 @include ipad {
   .foo {
@@ -108,17 +108,14 @@ $breakpoint-up-down: ('m--device': 'screen and (min-width: 320px) and (max-width
   color: blue;
 
   @include mq-up(xs) {
-    // sm
     color: yellow;
   }
 
   @include mq-down(xs) {
-    // lg
     color: red;
   }
 
   @include mq-up-down(m--device) {
-    // lg
     color: white;
   }
 }
