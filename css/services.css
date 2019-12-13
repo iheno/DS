@@ -12,10 +12,11 @@
   font-weight: 600;
 }
 
-
-
-@media screen and (max-width: 1023px) {}
-
+@media screen and (max-width: 1023px) {
+  .service__container {
+    height: auto;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .service__container {
