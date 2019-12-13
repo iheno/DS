@@ -1,0 +1,51 @@
+/* ==================== text ellipsis ==================== */
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.ellipsis {
+  &__one {
+    @include ellipsis;
+    -webkit-line-clamp: 1;
+  }
+
+  &__two {
+    @include ellipsis;
+    -webkit-line-clamp: 2;
+  }
+
+  &__three {
+    @include ellipsis;
+    -webkit-line-clamp: 3;
+  }
+}
+
+
+
+
+/* ==================== bakcground-size: cover ====================  */
+$imgUrl: "../img/" !default;
+$myimg: "" !default;
+
+@mixin bgSizeCover($imgheight, $imgwidth, $myimg) {
+  width: 100%;
+  height: 0;
+  padding-top: #{calc ($imgheight / $imgwidth * 100%)};
+  /* calc（image height / image weight * 100%） */
+
+  background: {
+    image: url($imgUrl + $myimg);
+    size: cover;
+    repeat: no-repeat;
+    position: center center;
+  }
+}
+
+// export test ------------------------
+.sample-background-cover {
+  @include bgSizeCover(300, 1000, 'sample.png') //（image height , image weight , 'image type'） */
+}

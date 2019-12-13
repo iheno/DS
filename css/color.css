@@ -1,0 +1,34 @@
+/* ==================== color system common ==================== */
+:root {
+  --black: #101010;
+  --white: #FFFFFF;
+  --gray900: #3D3D3D;
+  --gray800: #545454;
+  --gray700: #737373;
+  --gray600: #9B9B9B;
+  --gray500: #D2D2D2;
+  --gray400: #E3E3E3;
+  --gray300: #E8E8E8;
+  --gray200: #EFEFEF;
+  --gray100: #F8F8F8;
+  --blue600: #2187F2;
+  --blue500: #4FA3FA;
+  --blue400: #7DB9F7;
+  --blue300: #ACD3FB;
+  --blue200: #CDE3FA;
+  --blue100: #F3F9FF;
+  --pink600: #E91E63;
+  --pink500: #F06083;
+  --pink400: #FA8AA5;
+  --pink300: #FFAFC2;
+  --pink200: #FFD1DC;
+  --pink100: #FFF2F5;
+  /* -------------------- Snow custom colors-------------------- */
+  --snow-rating: #FAA355;
+  --snow-pickup: #BB89DE;
+}
+
+.test-color {
+  color: var(--black);
+  background-color: #E91E63;
+}
