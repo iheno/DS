@@ -1095,14 +1095,30 @@ a.sample-linkColor:hover, a.sample-linkColor:active, a.sample-linkColor:focus {
 
 /* ==================== bakcground-size: cover ====================  */
 .sample-background-cover {
+  display: block;
+  overflow: hidden;
   width: 100%;
   height: 0;
-  padding-top: calc 30%;
+  padding-top: calc(62.5%);
   /* calc（image height / image weight * 100%） */
-  background-image: url("../img/sample.png");
+  background-image: url("../img/sample.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sample-background-cover2 {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  padding-top: 62.5%;
+  background: url("../img/sample.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* ==================== When using ::before and ::after ====================  */
