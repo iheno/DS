@@ -82,3 +82,58 @@ $myimg: "" !default;
 .sample-circle {
   @include circle(100px);
 }
+
+
+
+
+
+/* ==================== Vendor Prefixing ====================  */
+@mixin css3($property, $value) {
+
+  @each $prefix in -webkit-,
+  -moz-,
+  -ms-,
+  -o-,
+  '' {
+    #{$prefix}#{$property}: $value;
+  }
+}
+
+// export test
+.sample-Prefixing {
+  @include css3(transition, 0.5s);
+}
+
+
+
+
+
+/* ==================== Opacity ====================  */
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacityIE: $opacity * 100;
+  filter: alpha(opacity=$opacityIE);
+}
+
+// export test
+.sample-Opacity {
+  @include opacity(0.5);
+}
+
+
+
+
+
+/* ==================== clearfix ====================  */
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// export test
+.sample-clearfix {
+  @include clearfix;
+}

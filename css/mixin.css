@@ -52,3 +52,22 @@
   height: 100px;
   border-radius: 100%;
 }
+
+/* ==================== Vendor Prefixing ====================  */
+.sample-Prefixing {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* ==================== Opacity ====================  */
+.sample-Opacity {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/* ==================== clearfix ====================  */
+.sample-clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

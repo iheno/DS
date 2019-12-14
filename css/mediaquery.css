@@ -3,11 +3,10 @@
 /* tablet width 1024*768 : tablet-w */
 /* tablet height 1024*768 : tablet-h */
 /* ipad mini 640px : ipad */
-/* mobile middle 480px : mobile-mid */
-/* mobile small 320px : mobile-sm */
+/* mobile middle 480px : mobile */
+/* mobile small 360px : mobile-sm*/
 /* ==================== The Grid System Demystified ==================== */
-/* use ipad 640px : ipad */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 480px) {
   .foo {
     margin: 0;
     padding: 0;
@@ -31,13 +30,13 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 360px) and (max-width: 480px) {
   .foo {
     color: white;
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .foo {
     color: black;
   }

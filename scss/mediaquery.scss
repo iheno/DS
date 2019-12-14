@@ -5,8 +5,8 @@ $desktop-m-width: 1140px;
 $tablet-width: 1024px;
 $tablet-height: 768px;
 $ipad-width: 640px;
-$mobile-m-width: 480px;
-$mobile-s-width: 320px;
+$mobile-width: 480px;
+$mobile-s-width: 360px;
 
 /* only PC : pc-only */
 @mixin pc-only {
@@ -36,15 +36,15 @@ $mobile-s-width: 320px;
   }
 }
 
-/* mobile middle 480px : mobile-mid */
-@mixin mobile-mid {
-  @media screen and (max-width: #{$mobile-m-width}) {
+/* mobile middle 480px : mobile */
+@mixin mobile {
+  @media screen and (max-width: #{$mobile-width}) {
     @content;
   }
 }
 
-/* mobile small 320px : mobile-sm */
-@mixin mobile-sm {
+/* mobile small 360px : mobile-sm*/
+@mixin mobile-s {
   @media screen and (max-width: #{$mobile-s-width}) {
     @content;
   }
@@ -68,11 +68,11 @@ $breakpoint-down: ('xs': 'screen and (max-width: 480px)',
 ) !default;
 
 // min and max-width
-$breakpoint-up-down: ('m--device': 'screen and (min-width: 320px) and (max-width: 480px)',
-  'sm--device': 'screen and (min-width: 481px) and (max-width: 767px)',
-  'mid--device': 'screen and (min-width: 768px) and (max-width: 991px)',
-  'lg--device': 'screen and (min-width: 992px) and (max-width: 1199px)',
-  'pc': 'screen and (min-width: 1200px)',
+$breakpoint-up-down: ('xs--device': 'screen and (min-width: 360px) and (max-width: 480px)',
+  'sm--device': 'screen and (min-width: 481px) and (max-width: 768px)',
+  'md--device': 'screen and (min-width: 769px) and (max-width: 992px)',
+  'lg--device': 'screen and (min-width: 993px) and (max-width: 1200px)',
+  'xl--device': 'screen and (min-width: 1201px)',
 ) !default;
 
 // @mixin
@@ -88,15 +88,14 @@ $breakpoint-up-down: ('m--device': 'screen and (min-width: 320px) and (max-width
   }
 }
 
-@mixin mq-up-down($breakpoint: m--device) {
+@mixin mq-up-down($breakpoint: xs--device) {
   @media #{map-get($breakpoint-up-down, $breakpoint)} {
     @content;
   }
 }
 
 // export test
-/* use ipad 640px : ipad */
-@include ipad {
+@include mobile {
   .foo {
     margin: 0;
     padding: 0;
@@ -115,7 +114,7 @@ $breakpoint-up-down: ('m--device': 'screen and (min-width: 320px) and (max-width
     color: red;
   }
 
-  @include mq-up-down(m--device) {
+  @include mq-up-down(xs--device) {
     color: white;
   }
 }
