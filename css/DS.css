@@ -34,6 +34,15 @@
   background-color: #E91E63;
 }
 
+/* -------------------- linkColor -------------------- */
+a.sample-linkColor {
+  color: #2187F2;
+}
+
+a.sample-linkColor:hover, a.sample-linkColor:active, a.sample-linkColor:focus {
+  color: #81bbf8;
+}
+
 /* ==================== font-size ====================  */
 .fs-8 {
   font-size: 0.8rem;
@@ -1096,4 +1105,11 @@
   content: "";
   display: block;
   position: absolute;
+}
+
+/* ==================== Circle ====================  */
+.sample-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
 }

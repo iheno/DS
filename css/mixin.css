@@ -45,3 +45,10 @@
   display: block;
   position: absolute;
 }
+
+/* ==================== Circle ====================  */
+.sample-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}

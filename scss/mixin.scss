@@ -66,3 +66,19 @@ $myimg: "" !default;
 .sample-pseudo::after {
   @include pseudo;
 }
+
+
+
+
+
+/* ==================== Circle ====================  */
+@mixin circle($size) {
+  width: $size;
+  height: $size;
+  border-radius: 100%;
+}
+
+// export test
+.sample-circle {
+  @include circle(100px);
+}

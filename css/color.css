@@ -32,3 +32,12 @@
   color: var(--black);
   background-color: #E91E63;
 }
+
+/* -------------------- linkColor -------------------- */
+a.sample-linkColor {
+  color: #2187F2;
+}
+
+a.sample-linkColor:hover, a.sample-linkColor:active, a.sample-linkColor:focus {
+  color: #81bbf8;
+}
