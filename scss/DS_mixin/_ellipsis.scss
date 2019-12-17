@@ -1,0 +1,25 @@
+/* ==================== text ellipsis ==================== */
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.ellipsis {
+  &__one {
+    @include ellipsis;
+    -webkit-line-clamp: 1;
+  }
+
+  &__two {
+    @include ellipsis;
+    -webkit-line-clamp: 2;
+  }
+
+  &__three {
+    @include ellipsis;
+    -webkit-line-clamp: 3;
+  }
+}

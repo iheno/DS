@@ -1,5 +1,5 @@
-@charset "UTF-8";
 /* ==================== Reset css ==================== */
+
 /* -------------------- Resetting margins, paddings, and borders -------------------- */
 html,
 body,
@@ -78,9 +78,15 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.6rem; //16px
   line-height: 1.4;
-  font-family: "微軟正黑體", "Microsoft JhengHei", "Microsoft JhengHei UI", “微軟雅黑”, "Microsoft YaHei", "Microsoft YaHei UI", sans-serif;
+  //  chinese - EN
+  font-family: Lucida Console, Courier, monospace, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+  //  chinese - TW,HK
+  // font-family: "微軟正黑體", "Microsoft JhengHei", "Microsoft JhengHei UI", “微軟雅黑”, "Microsoft YaHei", "Microsoft YaHei UI", sans-serif;
+  //  chinese - CN
+  // font-family: LiSu, STLiti, "Microsoft YaHei",
+  //   微软雅黑, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;
 }
 
 a,
@@ -102,14 +108,12 @@ main {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 /* -------------------- Elements -------------------- */
@@ -147,16 +151,11 @@ q:before {
 
 hr {
   display: block;
-  unicode-bidi: -webkit-isolate;
   unicode-bidi: isolate;
-  -webkit-margin-before: 0.5em;
-          margin-block-start: 0.5em;
-  -webkit-margin-after: 0.5em;
-          margin-block-end: 0.5em;
-  -webkit-margin-start: auto;
-          margin-inline-start: auto;
-  -webkit-margin-end: auto;
-          margin-inline-end: auto;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
   overflow: hidden;
   border-style: inset;
   border-width: 1px;

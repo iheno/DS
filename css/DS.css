@@ -1,4 +1,200 @@
-@charset "UTF-8";
+/* ==================== Reset css ==================== */
+/* -------------------- Resetting margins, paddings, and borders -------------------- */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+em,
+small,
+strong,
+sub,
+sup,
+mark,
+del,
+ins,
+strike,
+abbr,
+dfn,
+blockquote,
+q,
+cite,
+code,
+pre,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+div,
+section,
+article,
+main,
+aside,
+nav,
+header,
+hgroup,
+footer,
+img,
+figure,
+figcaption,
+address,
+time,
+audio,
+video,
+canvas,
+iframe,
+details,
+summary,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* -------------------- Typography -------------------- */
+html {
+  font-size: 62.5% !important;
+  /* -> 10px , 1em , 1rem */
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-family: Lucida Console, Courier, monospace, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+}
+
+a,
+a:hover,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* -------------------- Layout -------------------- */
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* -------------------- Elements -------------------- */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+img {
+  border-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+
+hr {
+  display: block;
+  unicode-bidi: -webkit-isolate;
+  unicode-bidi: isolate;
+  -webkit-margin-before: 0.5em;
+          margin-block-start: 0.5em;
+  -webkit-margin-after: 0.5em;
+          margin-block-end: 0.5em;
+  -webkit-margin-start: auto;
+          margin-inline-start: auto;
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
+
+/* -------------------- Attributes & states -------------------- */
+[hidden] {
+  display: none !important;
+}
+
+[disabled] {
+  cursor: not-allowed;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+button,
+button:focus {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* -------------------- Utility classes -------------------- */
+.sr-only {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  left: -9999px;
+  top: -9999px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 /* ==================== color system common ==================== */
 :root {
   --black: #101010;
@@ -32,15 +228,6 @@
 .test-color {
   color: var(--black);
   background-color: #E91E63;
-}
-
-/* -------------------- linkColor -------------------- */
-a.sample-linkColor {
-  color: #2187F2;
-}
-
-a.sample-linkColor:hover, a.sample-linkColor:active, a.sample-linkColor:focus {
-  color: #81bbf8;
 }
 
 /* ==================== font-size ====================  */
@@ -1019,137 +1206,4 @@ a.sample-linkColor:hover, a.sample-linkColor:active, a.sample-linkColor:focus {
 
 .m-b-100 {
   margin-bottom: 100px;
-}
-
-/* ==================== Media Quary Setting Basic ==================== */
-/* only PC : pc-only */
-/* tablet width 1024*768 : tablet-w */
-/* tablet height 1024*768 : tablet-h */
-/* ipad mini 640px : ipad */
-/* mobile middle 480px : mobile */
-/* mobile small 360px : mobile-sm*/
-/* ==================== The Grid System Demystified ==================== */
-@media screen and (max-width: 480px) {
-  .foo {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-/* mq-up and mq-down class */
-.foo {
-  color: blue;
-}
-
-@media screen and (min-width: 481px) {
-  .foo {
-    color: yellow;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .foo {
-    color: red;
-  }
-}
-
-@media screen and (min-width: 360px) and (max-width: 480px) {
-  .foo {
-    color: white;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .foo {
-    color: black;
-  }
-}
-
-/* ==================== text ellipsis ==================== */
-.ellipsis__one {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-}
-
-.ellipsis__two {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
-
-.ellipsis__three {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-}
-
-/* ==================== bakcground-size: cover ====================  */
-.sample-background-cover {
-  display: block;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  padding-top: calc(62.5%);
-  /* calc（image height / image weight * 100%） */
-  background-image: url("../img/sample.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.sample-background-cover2 {
-  display: block;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  padding-top: 62.5%;
-  background: url("../img/sample.jpg") 50% 50% no-repeat;
-  background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-/* ==================== When using ::before and ::after ====================  */
-.sample-pseudo::after {
-  content: "";
-  display: block;
-  position: absolute;
-}
-
-/* ==================== Circle ====================  */
-.sample-circle {
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-}
-
-/* ==================== Vendor Prefixing ====================  */
-.sample-Prefixing {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-/* ==================== Opacity ====================  */
-.sample-Opacity {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
-
-/* ==================== clearfix ====================  */
-.sample-clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
 }

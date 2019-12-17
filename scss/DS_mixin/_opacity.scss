@@ -1,0 +1,11 @@
+/* ==================== Opacity ====================  */
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacityIE: $opacity * 100;
+  filter: alpha(opacity=$opacityIE);
+}
+
+// export test
+.sample-Opacity {
+  @include opacity(0.5);
+}
