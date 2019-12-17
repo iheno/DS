@@ -10,6 +10,7 @@
   font: {
     size: 2rem;
     weight: 600;
+    family: Lucida Console, Courier, monospace;
   }
 
   height: 36px;
@@ -29,6 +30,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  font: {
+    family: Lucida Console, Courier, monospace;
+  }
 }
 
 .container__side {
@@ -78,6 +83,7 @@
     font: {
       size: 1.4rem;
       weight: 600;
+      family: Lucida Console, Courier, monospace
     }
 
     color: var(--gray900);
