@@ -15,8 +15,12 @@
   <meta property="og:url" content="" />
   <meta property="og:site_name" content="" />
   <meta property="og:description" content="" />
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=css&skin=desert">
+  </script>
   <!-- Design System Reset -->
   <link rel="stylesheet" href="css/DS.css">
+  <link rel="stylesheet" href="css/prettify.css">
 
   <!-- Custom css -->
   <link rel="stylesheet" href="css/styles.css">
@@ -39,7 +43,7 @@
       <div class="container__side__menu">
         <a href="#" class="active">
           <div class="container__side__item">
-            <i class="profile__ico ico_credit"></i>Colors
+            <i class="profile__ico ico_service"></i>Colors
           </div>
         </a>
         <a href="#">
@@ -76,14 +80,78 @@
     </div>
     <div class="container__body">
       <div class="container__box clearfix">
-        <div class="service__container">
-          <h3>Colors</h3>
+        <div class="ds__details">
+          <h2>WAmazing Colors</h2>
+          <div class="pre__box">
+            <h4>Reset Colors</h4>
+            <span class="codeTypes">SCSS</span>
+            <pre class="prettyprint lang-css linenums m-b-80">
+              <code>
+$primary: #E91E63;
+$secondary: #2187F2;
+$black: #101010;
+$white: #FFFFFF;
 
+// export
+.className {
+  color: var(--black);
+}
+             </code>
+            </pre>
+
+            <h4>Common Colors</h4>
+            <span class="codeTypes">SCSS</span>
+            <pre class="prettyprint lang-css linenums m-b-80">
+              <code>
+:root {
+  --black: #101010;
+  --white: #FFFFFF;
+  --gray900: #3D3D3D;
+  --gray800: #545454;
+  --gray700: #737373;
+  --gray600: #9B9B9B;
+  --gray500: #D2D2D2;
+  --gray400: #E3E3E3;
+  --gray300: #E8E8E8;
+  --gray200: #EFEFEF;
+  --gray100: #F8F8F8;
+  --blue600: #2187F2;
+  --blue500: #4FA3FA;
+  --blue400: #7DB9F7;
+  --blue300: #ACD3FB;
+  --blue200: #CDE3FA;
+  --blue100: #F3F9FF;
+  --pink600: #E91E63;
+  --pink500: #F06083;
+  --pink400: #FA8AA5;
+  --pink300: #FFAFC2;
+  --pink200: #FFD1DC;
+  --pink100: #FFF2F5;
+}
+
+// export
+.className {
+  background-color: $primary;
+}
+              </code>
+            </pre>
+
+            <h4>Custom Colors <span>for 「Snow」</span></h4>
+            <span class="codeTypes">SCSS</span>
+            <pre class="prettyprint lang-css linenums m-b-80">
+              <code>
+:root {
+  // 「Snow」 Custom Colors 
+  --snow-rating: #FAA355;
+  --snow-pickup: #BB89DE;
+}
+              </code>
+            </pre>
+          </div>
         </div>
       </div>
     </div>
   </div>
-
 
 
 </body>
