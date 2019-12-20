@@ -1,34 +1,10 @@
-/* ==================== font-size ====================  */
-$max: 36;
-$offset: 1;
-$unit: 'rem';
-
-@mixin list-loop($className, $styleName) {
-  $i: 8;
-
-  @while $i <=$max {
-    #{$className + $i} {
-      #{$styleName}: #{($i / 10) + $unit};
-    }
-
-    $i: $i+$offset;
-  }
-}
-
-@include list-loop('.fs-', 'font-size');
-
-
-
-
-
-
 @mixin font-size($size, $base: 10) {
   // if html font-size 100% will be change $base: 16
   font-size: ($size / $base) + rem;
 }
 
-// export test
-.sample-font-size1 {
+// export
+.custom-class {
   @include font-size(12);
   /* reset html font-size 62.5% */
 }
@@ -43,8 +19,8 @@ $unit: 'rem';
   font-size: ($size / $base) + rem;
 }
 
-// export test
-.sample-font-size2 {
+// export
+.custom-class {
   @include fs-px-rem(12);
   /* reset html font-size 100% */
 }

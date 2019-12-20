@@ -1,3 +1,26 @@
+/* ==================== font-size ====================  */
+$max: 36;
+$offset: 1;
+$unit: 'rem';
+
+@mixin list-loop($className, $styleName) {
+  $i: 8;
+
+  @while $i <=$max {
+    #{$className + $i} {
+      #{$styleName}: #{($i / 10) + $unit};
+    }
+
+    $i: $i+$offset;
+  }
+}
+
+@include list-loop('.fs-', 'font-size');
+
+
+
+
+
 /* ==================== padding ====================  */
 $max: 40;
 $offset: 2;

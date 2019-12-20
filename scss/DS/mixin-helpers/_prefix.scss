@@ -10,7 +10,7 @@
   }
 }
 
-// export test
-.sample-Prefixing {
+// export
+.custom-class {
   @include prefix(transition, 0.5s);
 }

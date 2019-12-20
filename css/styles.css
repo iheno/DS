@@ -1,10 +1,9 @@
-/* ==================== Vendor Prefixing ====================  */
-.sample-Prefixing {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-/* ==================== header.scss ==================== */
+/* 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@ included @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@   mixin  @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@   SCSS   @@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+/* ==================== _header.scss ==================== */
 .headerWarp {
   position: relative;
   top: 0;
@@ -42,28 +41,18 @@
   margin-top: 8px;
 }
 
-/* ==================== Opacity ====================  */
-.sample-Opacity {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
-
-/* ==================== Vendor Prefixing ====================  */
-.sample-Prefixing {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
+/* ==================== _container.scss ==================== */
 .HeadingTitle {
-  max-width: 1080px;
+  display: block;
+  width: 100%;
   margin: 0 auto;
-  padding: 50px 0 0;
   color: var(--gray900);
   font-size: 2rem;
   font-weight: 600;
   font-family: Lucida Console, Courier, monospace;
   height: 36px;
   line-height: 36px;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -71,7 +60,6 @@
   margin: 0 auto;
   padding: 40px 0 102px;
   position: relative;
-  max-width: 1080px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,6 +249,7 @@
   }
 }
 
+/* ==================== _details.scss ==================== */
 .ds__details {
   min-height: 530px;
   position: relative;

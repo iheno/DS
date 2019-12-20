@@ -35,11 +35,11 @@ $myimg: "" !default;
   object-fit: cover;
 }
 
-// export test
-.sample-background-cover {
+// export
+.custom-class {
   @include bgSizeCover(960, 600, 'sample.jpg') //（image weight , image height , 'image type'） */
 }
 
-.sample-background-cover2 {
+.custom-class2 {
   @include bgSizeCover2(960, 600, '../img/sample.jpg') //（image weight , image height , 'image url'） */
 }

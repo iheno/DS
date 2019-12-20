@@ -1,3 +1,6 @@
-@import "styles/header";
-@import "styles/container";
-@import "styles/details";
+// import _mixin.scss from ./DS/
+@import "./DS/mixin";
+// add here custom styles
+@import "./styles/header";
+@import "./styles/container";
+@import "./styles/details";

@@ -5,7 +5,7 @@
   filter: alpha(opacity=$opacityIE);
 }
 
-// export test
-.sample-Opacity {
+// export
+.custom-class {
   @include opacity(0.5);
 }

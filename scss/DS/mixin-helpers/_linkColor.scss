@@ -11,7 +11,7 @@ $linkColor: #2187F2;
   }
 }
 
-// export test
-a.sample-linkColor {
+// export
+a.custom-class {
   @include linkColor($linkColor);
 }

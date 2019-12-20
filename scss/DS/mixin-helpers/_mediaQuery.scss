@@ -43,12 +43,23 @@ $mobile-s-width: 360px;
   }
 }
 
-/* mobile small 360px : mobile-sm*/
+/* mobile small 360px : mobile-sm */
 @mixin mobile-s {
   @media screen and (max-width: #{$mobile-s-width}) {
     @content;
   }
 }
+
+// export
+@include mobile {
+  .custom-class {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+
 
 /* ==================== The Grid System Demystified ==================== */
 // min-width
@@ -94,16 +105,8 @@ $breakpoint-up-down: ('xs--device': 'screen and (min-width: 360px) and (max-widt
   }
 }
 
-// export test
-@include mobile {
-  .foo {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-/* mq-up and mq-down class */
-.foo {
+// export
+.custom-class {
   color: blue;
 
   @include mq-up(xs) {
@@ -120,7 +123,7 @@ $breakpoint-up-down: ('xs--device': 'screen and (min-width: 360px) and (max-widt
 }
 
 @include mq-up-down(sm--device) {
-  .foo {
+  .custom-class {
     color: black;
   }
 }

@@ -80,13 +80,6 @@ html {
 body {
   font-size: 1.6rem; //16px
   line-height: 1.4;
-  //  chinese - useful 2020 fonts
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
-  //  chinese - TW,HK
-  // font-family: "微軟正黑體", "Microsoft JhengHei", "Microsoft JhengHei UI", “微軟雅黑”, "Microsoft YaHei", "Microsoft YaHei UI", sans-serif;
-  //  chinese - CN
-  // font-family: LiSu, STLiti, "Microsoft YaHei",
-  //   微软雅黑, "Microsoft JhengHei", 华文细黑, STHeiti, MingLiu;
 }
 
 a,
@@ -179,18 +172,4 @@ button:focus {
   outline: none;
   border: none;
   cursor: pointer;
-}
-
-/* -------------------- Utility classes -------------------- */
-.sr-only {
-  position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  left: -9999px;
-  top: -9999px;
-}
-
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
 }

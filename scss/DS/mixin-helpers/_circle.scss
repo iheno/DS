@@ -5,7 +5,7 @@
   border-radius: 100%;
 }
 
-// export test
-.sample-circle {
+// export
+.custom-class {
   @include circle(100px);
 }

@@ -5,7 +5,7 @@
   position: $pos;
 }
 
-// export test
-.sample-pseudo::after {
+// export
+.custom-class::after {
   @include pseudo;
 }
