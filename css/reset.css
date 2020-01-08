@@ -101,13 +101,13 @@ main {
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *:before,
 *:after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 /* -------------------- Elements -------------------- */
@@ -148,13 +148,13 @@ hr {
   unicode-bidi: -webkit-isolate;
   unicode-bidi: isolate;
   -webkit-margin-before: 0.5em;
-  margin-block-start: 0.5em;
+          margin-block-start: 0.5em;
   -webkit-margin-after: 0.5em;
-  margin-block-end: 0.5em;
+          margin-block-end: 0.5em;
   -webkit-margin-start: auto;
-  margin-inline-start: auto;
+          margin-inline-start: auto;
   -webkit-margin-end: auto;
-  margin-inline-end: auto;
+          margin-inline-end: auto;
   overflow: hidden;
   border-style: inset;
   border-width: 1px;
