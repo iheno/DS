@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hant-TW">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="" />
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=css&skin=desert"></script>
+    <!-- Design System -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- CDN -->
+    <link rel="stylesheet" href="css/prettify.css" />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="headerWarp">
+      <div class="header__inner">
+        <a href="#">Design System</a>
+      </div>
+    </header>
+
+    <div class="container">
+      <h1 class="HeadingTitle clearfix">Design System</h1>
+      <div class="container__side">
+        <div class="container__side__menu">
+          <a href="#" class="active">
+            <div class="container__side__item">
+              <i class="profile__ico ico_service"></i>Colors
+            </div>
+          </a>
+          <a href="#">
+            <div class="container__side__item">
+              <i class="profile__ico ico_service"></i>Font
+            </div>
+          </a>
+          <a href="#">
+            <div class="container__side__item">
+              <i class="profile__ico ico_service"></i>Form
+            </div>
+          </a>
+          <a href="#">
+            <div class="container__side__item">
+              <i class="profile__ico ico_service"></i>Layout
+            </div>
+          </a>
+          <a href="#">
+            <div class="container__side__item">
+              <i class="profile__ico ico_service"></i>Reset CSS
+            </div>
+          </a>
+          <a href="#">
+            <div class="container__side__item">
+              <i class="profile__ico ico_service"></i>DS Reset
+            </div>
+          </a>
+          <a href="#">
+            <div class="container__side__item">
+              <i class="profile__ico ico_service"></i>DS mixin
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="container__body">
+        <div class="container__box clearfix">
+          <div class="ds__details">
+            <h2>Colors</h2>
+            <div class="pre__box">
+              <h4>Reset Colors</h4>
+              <img src="img/colors/color01.png" alt="" />
+              <span class="codeTypes">SCSS</span>
+              <pre class="prettyprint lang-css linenums m-b-80">
+              <code>
+$primary: #E91E63;
+$secondary: #2187F2;
+$harmony: #7d5fcf;
+$black: #101010;
+$white: #FFFFFF;
+
+// export
+.className {
+  background-color: $primary;
+}
+             </code>
+            </pre>
+
+              <h4>Common Colors</h4>
+              <img src="img/colors/color02.png" alt="" />
+              <img src="img/colors/color03.png" alt="" />
+              <span class="codeTypes">SCSS</span>
+              <pre class="prettyprint lang-css linenums m-b-80">
+              <code>
+:root {
+  --black: #101010;
+  --white: #FFFFFF;
+  --gray900: #3D3D3D;
+  --gray800: #545454;
+  --gray700: #737373;
+  --gray600: #9B9B9B;
+  --gray500: #D2D2D2;
+  --gray400: #E3E3E3;
+  --gray300: #E8E8E8;
+  --gray200: #EFEFEF;
+  --gray100: #F8F8F8;
+  --blue600: #2187F2;
+  --blue500: #4FA3FA;
+  --blue400: #7DB9F7;
+  --blue300: #ACD3FB;
+  --blue200: #CDE3FA;
+  --blue100: #F3F9FF;
+  --pink600: #E91E63;
+  --pink500: #F06083;
+  --pink400: #FA8AA5;
+  --pink300: #FFAFC2;
+  --pink200: #FFD1DC;
+  --pink100: #FFF2F5;
+  --violet600: #7d5fcf;
+  --violet500: #8d6ee3;
+  --violet400: #a487f4;
+  --violet300: #bfaaf9;
+  --violet200: #d8cdfa;
+  --violet100: #f8f3ff;
+}
+
+// export
+.className {
+  color: var(--black);
+}
+              </code>
+            </pre>
+
+              <h4>Custom Colors <span>for 「Snow」</span></h4>
+              <span class="codeTypes">SCSS</span>
+              <pre class="prettyprint lang-css linenums m-b-80">
+              <code>
+:root {
+  // 「Snow」 Custom Colors 
+  --snow-rating: #FAA355;
+  --snow-pickup: #BB89DE;
+}
+              </code>
+            </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

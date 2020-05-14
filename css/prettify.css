@@ -1,0 +1,27 @@
+pre.prettyprint {
+	font-family: Monaco, Menlo, Consolas, 'Courier New', Courier, monospace, sans-serif;
+}
+
+.prettyprint {
+	font-size: 1.2rem;
+}
+
+.prettyprint ol {
+	padding: .2rem 0 .5rem .8rem;
+	/* 間隔の調整（必要であれば） */
+}
+
+.prettyprint ol.linenums>li {
+	list-style-type: decimal;
+	/* 1行ごとに行番号を表示 */
+	border-left: solid 1px #EBB15E;
+	/* 区切り線を表示  */
+	padding-left: 0.5rem;
+	/* 間隔の調整（必要であれば） */
+}
+
+.prettyprint ol.linenums>li {
+	list-style-type: decimal;
+	/* または */
+	list-style-type: decimal-leading-zero;
+}
