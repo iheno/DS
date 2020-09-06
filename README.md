@@ -1,8 +1,9 @@
-# DS
+# Design System
+
 Design System
 
+live sass compiler setting :
 
-live sass compiler setting : 
 ```
 {
 "liveSassCompile.settings.formats": [
@@ -23,7 +24,9 @@ live sass compiler setting :
   ]
 }
 ```
+
 Typography : scss
+
 ```
 html {
   font-size: 62.5% !important;
