@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="zh-cmn-Hant-TW">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -31,24 +31,49 @@
   <body>
     <header class="headerWarp">
       <div class="header__inner">
-        <a href="#"><img src="img/startupdb_logo.svg" /></a>
+        <a href="#">Design System</a>
       </div>
     </header>
 
     <div class="container">
-      <h1 class="HeadingTitle clearfix">Design Guide</h1>
+      <h1 class="HeadingTitle clearfix">Design System</h1>
       <div class="container__side">
         <div class="container__side__menu">
           <a href="#" class="active">
             <div class="container__side__item">
-              <i class="profile__ico ico_paint"></i>Colors
+              <i class="profile__ico ico_service"></i>Colors
             </div>
           </a>
-          <!-- <a href="#">
+          <a href="#">
             <div class="container__side__item">
               <i class="profile__ico ico_service"></i>Font
             </div>
-          </a> -->
+          </a>
+          <a href="#">
+            <div class="container__side__item">
+              <i class="profile__ico ico_service"></i>Form
+            </div>
+          </a>
+          <a href="#">
+            <div class="container__side__item">
+              <i class="profile__ico ico_service"></i>Layout
+            </div>
+          </a>
+          <a href="#">
+            <div class="container__side__item">
+              <i class="profile__ico ico_service"></i>Reset CSS
+            </div>
+          </a>
+          <a href="#">
+            <div class="container__side__item">
+              <i class="profile__ico ico_service"></i>DS Reset
+            </div>
+          </a>
+          <a href="#">
+            <div class="container__side__item">
+              <i class="profile__ico ico_service"></i>DS mixin
+            </div>
+          </a>
         </div>
       </div>
       <div class="container__body">
@@ -56,78 +81,80 @@
           <div class="ds__details">
             <h2>Colors</h2>
             <div class="pre__box">
-              <h4></h4>
+              <h4>Reset Colors</h4>
               <img src="img/colors/color01.png" alt="" />
               <span class="codeTypes">SCSS</span>
               <pre class="prettyprint lang-css linenums m-b-80">
               <code>
-$primary: #3dbba3;
-$secondary-yellow: #fff177;
-$secondary-blue: #75caf2;
-              </code>
+$primary: #E91E63;
+$secondary: #2187F2;
+$harmony: #7d5fcf;
+$black: #101010;
+$white: #FFFFFF;
+
+// export
+.className {
+  background-color: $primary;
+}
+             </code>
             </pre>
 
-              <h4></h4>
-              <img src="img/colors/color02.png" alt="" class="m-b-50" />
-              <img src="img/colors/color03.png" alt="" class="m-b-50" />
+              <h4>Common Colors</h4>
+              <img src="img/colors/color02.png" alt="" />
+              <img src="img/colors/color03.png" alt="" />
               <span class="codeTypes">SCSS</span>
               <pre class="prettyprint lang-css linenums m-b-80">
               <code>
 :root {
---black: #000000;
---white: #ffffff;
---g900: #101010;
---g800: #3d3d3d;
---g700: #545454;
---g600: #737373;
---g500: #9b9b9b;
---g400: #d2d2d2;
---g300: #e3e3e3;
---g200: #e8e8e8;
---g100: #efefef;
---g50: #f8f8f8;
---g10: #fefefe;
---p900: #0b4b59;
---p800: #13646c;
---p700: #1e8686;
---p600: #2ca095;
---p500: #3dbba3;
---p400: #69d6b7;
---p300: #8beac6;
---p200: #b5f8d8;
---p100: #d9fbe8;
---p50: #ecfff4;
---p10: #f8fffb;
---b900: #00498d;
---b800: #0068ae;
---b700: #0079c2;
---b600: #008bd6;
---b500: #0098e4;
---b400: #00a7e9;
---b300: #38b6ec;
---b200: #75caf2;
---b100: #addff7;
---b50: #def3fc;
---b10: #f6fcff;
---y900: #f58018;
---y800: #f9a926;
---y700: #fbc12f;
---y600: #fdd937;
---y500: #fae738;
---y400: #fdec57;
---y300: #fff177;
---y200: #fff59d;
---y100: #fff9c4;
---y50: #fffde7;
---y10: #fffef9;
+  --black: #101010;
+  --white: #FFFFFF;
+  --gray900: #3D3D3D;
+  --gray800: #545454;
+  --gray700: #737373;
+  --gray600: #9B9B9B;
+  --gray500: #D2D2D2;
+  --gray400: #E3E3E3;
+  --gray300: #E8E8E8;
+  --gray200: #EFEFEF;
+  --gray100: #F8F8F8;
+  --blue600: #2187F2;
+  --blue500: #4FA3FA;
+  --blue400: #7DB9F7;
+  --blue300: #ACD3FB;
+  --blue200: #CDE3FA;
+  --blue100: #F3F9FF;
+  --pink600: #E91E63;
+  --pink500: #F06083;
+  --pink400: #FA8AA5;
+  --pink300: #FFAFC2;
+  --pink200: #FFD1DC;
+  --pink100: #FFF2F5;
+  --violet600: #7d5fcf;
+  --violet500: #8d6ee3;
+  --violet400: #a487f4;
+  --violet300: #bfaaf9;
+  --violet200: #d8cdfa;
+  --violet100: #f8f3ff;
 }
 
 // export
 .className {
-  color: var(--g900);
+  color: var(--black);
 }
               </code>
+            </pre>
 
+              <h4>Custom Colors <span>for 「Snow」</span></h4>
+              <span class="codeTypes">SCSS</span>
+              <pre class="prettyprint lang-css linenums m-b-80">
+              <code>
+:root {
+  // 「Snow」 Custom Colors 
+  --snow-rating: #FAA355;
+  --snow-pickup: #BB89DE;
+}
+              </code>
+            </pre>
             </div>
           </div>
         </div>

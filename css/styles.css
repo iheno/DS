@@ -47,7 +47,7 @@
   display: block;
   width: 100%;
   margin: 0 auto;
-  color: var(--g900);
+  color: var(--gray900);
   font-size: 2rem;
   font-weight: 600;
   font-family: Lucida Console, Courier, monospace;
@@ -74,15 +74,15 @@
 }
 
 .container__side {
-  color: var(--g900);
+  color: var(--gray900);
   width: 200px;
 }
 
 .container__side__menu {
   background-color: var(--white);
   border-radius: 2px;
-  -webkit-box-shadow: 0 1px 0 0 var(--g400);
-          box-shadow: 0 1px 0 0 var(--g400);
+  -webkit-box-shadow: 0 1px 0 0 var(--gray400);
+          box-shadow: 0 1px 0 0 var(--gray400);
   margin-bottom: 10px;
 }
 
@@ -91,17 +91,17 @@
   height: 48px;
   line-height: 48px;
   position: relative;
-  border-left: 1px solid var(--g400);
-  border-right: 1px solid var(--g400);
+  border-left: 1px solid var(--gray400);
+  border-right: 1px solid var(--gray400);
 }
 
 .container__side__menu a:hover .container__side__item {
   cursor: pointer;
-  background-color: var(--g100);
+  background-color: var(--gray100);
 }
 
 .container__side__menu a:nth-of-type(n + 1) {
-  border-top: 1px solid var(--g400);
+  border-top: 1px solid var(--gray400);
 }
 
 .container__side__menu .container__side__item {
@@ -110,11 +110,11 @@
   font-size: 1.4rem;
   font-weight: 600;
   font-family: Lucida Console, Courier, monospace;
-  color: var(--g900);
+  color: var(--gray900);
 }
 
 .container__side__menu .container__side__item:hover {
-  color: var(--g900);
+  color: var(--gray900);
 }
 
 .container__side__menu .container__side__item:hover .profile__ico {
@@ -122,8 +122,8 @@
 }
 
 .container__side__menu .active .container__side__item {
-  border-left: 4px solid var(--p600);
-  color: var(--g900);
+  border-left: 4px solid var(--pink600);
+  color: var(--gray900);
   padding: 0 15px;
 }
 
@@ -143,8 +143,8 @@
   margin-right: 15px;
 }
 
-.container__side__item .ico_paint {
-  background-image: url(../img/paint_ico.svg);
+.container__side__item .ico_credit {
+  background-image: url(../img/credit_ico.svg);
   background-size: 100%;
   width: 16px;
   height: 16px;
@@ -225,7 +225,7 @@
     border-left: 0;
     padding: 0 10px;
     font-weight: bold;
-    border-bottom: 2px solid var(--p600);
+    border-bottom: 2px solid var(--pink600);
     text-align: center;
   }
   .container__body {
@@ -275,7 +275,7 @@
 
 .ds__details .pre__box h4 span {
   padding-left: 10px;
-  color: var(--g700);
+  color: var(--gray700);
 }
 
 .ds__details .pre__box .codeTypes {
